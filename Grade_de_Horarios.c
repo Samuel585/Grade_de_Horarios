@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #define MAX_PROFESSORES 5
 #define disciplinas 5
 #define turnos 3
@@ -26,15 +27,32 @@ void dados_prof(){
     
 }
 
+=======
+#include <stdbool.h>
+
+void dados_prof(){
+    
+}
+    char prof, turno;
+    int  materia[3];
+}
+>>>>>>> d72b7f9e493bfdca1498c2696b578de0c7172b36
 int main(){
     char prof, materia, turma, turno;
     int disp_prof, horarios, dias;
 
+<<<<<<< HEAD
     //Estabelecer função com os dados de todos os professores.
     //Dados: Nome, disciplina que leciona (lembrar que um professor pode ter mais de uma matéria), qual turno e dias pode lecionar.
     dados_prof();
     
 
+=======
+//Estabelecer função com os dados de todos os professores.
+//Dados: Nome, disciplina que leciona (lembrar que um professor pode ter mais de uma matéria), qual turno e dias pode lecionar.
+
+    
+>>>>>>> d72b7f9e493bfdca1498c2696b578de0c7172b36
 
 
     
@@ -43,5 +61,17 @@ int main(){
 
     //Estabelecer função grade de horários.
     //Exportar CSV
+<<<<<<< HEAD
     return 0;
 }
+=======
+    
+
+}
+    
+
+
+
+    
+}
+>>>>>>> d72b7f9e493bfdca1498c2696b578de0c7172b36
