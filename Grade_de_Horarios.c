@@ -1,12 +1,36 @@
 #include <stdio.h>
-<<<<<<< HEAD
-#define MAX_PROFESSORES 5
-#define disciplinas 5
-#define turnos 3
+#include <stdbool.h>
 
-void dados_prof(){
-    char prof[MAX_PROFESSORES], turno[turnos];
-    char materia[disciplinas]; 
+#define MAX_PROFESSORES 5
+#define MAX_disciplinas 5
+#define MAX_t 3
+#define MAX_d_s 6
+#define MAX_horas_d 6
+#define MAX_TURMAS 10
+
+void dados_inst(){
+    int dias_s[MAX_d_s], turnos[MAX_t], horarios[MAX_horas_d], turmas[MAX_TURMAS];
+    int opcao, i = 0;
+    printf("Instituição, digite os dias da semana disponíveis para aula: \n"); 
+    scanf("%d", &dias_s[i]);
+    //vamos trabalhar apenas com um turno agora
+    //printf("Quantos turnos vocês oferecem? \n");
+    //scanf("%d", &turnos[i]);
+    //adcionar: diferentes turnos tem diferentes quantidades de horários
+    printf("Digite quantos horários disponíveis vocês oferecem: \n");
+    scanf("%d", &horarios[i]);
+    
+    printf("Digite quantos turmas: \n");
+    scanf("%d", &turmas[i]);
+    i++;
+}
+
+
+
+void dados_prof(){ //Estabelecer função com os dados de todos os professores.
+//Dados: Nome, disciplina que leciona qual turno e dias pode lecionar.    
+    char prof[MAX_PROFESSORES], turno[MAX_t];
+    char materia[MAX_disciplinas]; 
     int opcao, i=0;
     do{
         printf("Digite 1 para cadastrar um professor ou 2 para sair: ");
@@ -17,9 +41,9 @@ void dados_prof(){
         scanf("%s", &prof[i]);
         printf("\nQue disciplina ele leciona? ");
         scanf("%s", &materia[i]);
-        printf("Qual turno ele leciona? (M, V, N): ");
-        scanf("%s", &turno[i]);
-        printf("%dº cadastrado com sucesso!\n", i+1);
+        //printf("Qual turno ele leciona? (M, V, N): ");
+        //scanf("%s", &turno[i]);
+        printf("%dº professor cadastrado com sucesso!\n", i+1);
         i++;
         }
     }while(opcao != 2);
@@ -27,51 +51,31 @@ void dados_prof(){
     
 }
 
-=======
-#include <stdbool.h>
 
-void dados_prof(){
-    
-}
-    char prof, turno;
-    int  materia[3];
-}
->>>>>>> d72b7f9e493bfdca1498c2696b578de0c7172b36
+
 int main(){
     char prof, materia, turma, turno;
     int disp_prof, horarios, dias;
 
-<<<<<<< HEAD
-    //Estabelecer função com os dados de todos os professores.
-    //Dados: Nome, disciplina que leciona (lembrar que um professor pode ter mais de uma matéria), qual turno e dias pode lecionar.
-    dados_prof();
+
+   
+ 
+    //(lembrar que um professor pode ter mais de uma matéria), qual turno e dias pode lecionar.
+	// Protótipo feito;
+	dados_inst();
+	printf("Dias das semana: %d", dias_s);
+	printf("Quantos turnos: %d", turnos[i]);
+	printf("Quantos horários: %d", horarios[i]);
+	printf("Quantas turmas: %d");
+    dados_prof();  
+
+
+
     
-
-=======
-//Estabelecer função com os dados de todos os professores.
-//Dados: Nome, disciplina que leciona (lembrar que um professor pode ter mais de uma matéria), qual turno e dias pode lecionar.
-
     
->>>>>>> d72b7f9e493bfdca1498c2696b578de0c7172b36
-
-
-    
-    //Estabelecer função com dados dos horários
-    //Quais dias das semana e turnos a escola possui.
 
     //Estabelecer função grade de horários.
     //Exportar CSV
-<<<<<<< HEAD
+
     return 0;
 }
-=======
-    
-
-}
-    
-
-
-
-    
-}
->>>>>>> d72b7f9e493bfdca1498c2696b578de0c7172b36
